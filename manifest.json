@@ -10,6 +10,6 @@
  "executable": "python",
  "args": ["move-to-safe-master/move_to_safe.py"],
  "config": [
-   {"name": "safe_z", "label": "Safe Z Height(mm)", "value": 25 }
+   {"name": "safe_z", "label": "Safe Z Height(mm)", "value": -25 }
  ]
 }
