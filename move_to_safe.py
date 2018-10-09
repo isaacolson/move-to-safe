@@ -13,6 +13,10 @@ device.move_absolute({
     x: pos_x,
     y: pos_y,
     z: pos_z,
+}, 100,{
+    x: 0,
+    y: 0,
+    z: 0
 })
 
 device.log('ending!', 'success', ['toast'])
