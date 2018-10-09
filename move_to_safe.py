@@ -11,6 +11,9 @@ pos_z = z_height
 
 device.move_absolute(pos_x, pos_y, pos_z)
 
+device.log('ending!', 'success', ['toast'])
+
+
 if __name__ == '__main__':
     farmware_name = 'move_to_safe'
     # Load inputs from Farmware page widget specified in manifest file
