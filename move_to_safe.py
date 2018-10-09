@@ -7,7 +7,7 @@ device.log('starting!', 'success', ['toast'])
 
 pos_x = device.get_current_position('x')
 pos_y = device.get_current_position('y')
-pos_z = z_height
+#pos_z = z_height
 
 device.move_absolute(pos_x, pos_y, pos_z)
 
