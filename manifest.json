@@ -1,0 +1,15 @@
+{
+ "package": "Move To Safe",
+ "language": "python",
+ "author": "SAC Hydroponics",
+ "description": "Moves arm to safe Z height",
+ "version": "1.0.1",
+ "min_os_version_major": 6,
+ "url": "https://raw.githubusercontent.com/isaacolson/move-to-safe/master/manifest.json",
+ "zip": "https://github.com/isaacolson/move-to-safe/archive/master.zip",
+ "executable": "python",
+ "args": ["move-to-safe-master/move_to_safe.py"],
+ "config": [
+   {"name": "safe_z", "label": "Safe Z Height", "value": 25 }
+ ]
+}
