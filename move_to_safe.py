@@ -9,7 +9,7 @@ pos_x = device.get_current_position('x')
 pos_y = device.get_current_position('y')
 #pos_z = z_height
 
-device.move_absolute(pos_x, pos_y, pos_z)
+device.move_absolute(100, 100, 100)
 
 if __name__ == '__main__':
     farmware_name = 'move_to_safe'
