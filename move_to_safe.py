@@ -10,10 +10,10 @@ pos_y = device.get_current_position('y')
 pos_z = z_height
 
 device.move_absolute({
-    x: pos_x;
-    y: pos_y;
-    z: pos_z;
-};
+    x: pos_x,
+    y: pos_y,
+    z: pos_z,
+})
 
 device.log('ending!', 'success', ['toast'])
 
