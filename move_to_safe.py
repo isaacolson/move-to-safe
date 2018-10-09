@@ -3,11 +3,7 @@
 
 from farmware_tools import device
 
-import os
-import json
-import base64
-import math
-import requests
+device.log('starting!', 'success', ['toast'])
 
 pos_x = device.get_current_position('x')
 pos_y = device.get_current_position('y')
