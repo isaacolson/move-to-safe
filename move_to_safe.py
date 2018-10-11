@@ -7,7 +7,7 @@ from farmware_tools import get_config_value
 # Load inputs from Farmware page widget specified in manifest file
 z_height = get_config_value('Move To Safe', 'safe_z')
 
-device.log('starting!', 'success', ['toast'])
+device.log('starting! ' + str(z_height), 'success', ['toast'])
 
 pos_x = device.get_current_position('x')
 pos_y = device.get_current_position('y')
