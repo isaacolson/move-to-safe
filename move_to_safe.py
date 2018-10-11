@@ -16,7 +16,7 @@ pos_z = z_height
 device.move_absolute({
     x: pos_x,
     y: pos_y,
-    z: pos_z,
+    z: pos_z
 }, 100,{
     x: 0,
     y: 0,
