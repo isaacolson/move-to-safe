@@ -14,15 +14,14 @@ pos_z = z_height
 device.log('Moving to ' + str(pos_x) + ', ' + str(pos_y) + ', ' + str(pos_z), 'success', ['toast'])
 
 device.move_absolute(
-    {
-        x: pos_x,
-        y: pos_y,
-        z: pos_z
+    {pos_x,
+     pos_y,
+     pos_z
     }, 100,
     {
-        x: 0,
-        y: 0,
-        z: 0
+        0,
+        0,
+        0
     }
 )
 
