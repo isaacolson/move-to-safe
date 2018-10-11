@@ -2,6 +2,10 @@
 """Move To Safe Farmware"""
 
 from farmware_tools import device
+from farmware_tools import get_config_value
+
+# Load inputs from Farmware page widget specified in manifest file
+z_height = get_config_value('Move To Safe', 'safe_z')
 
 device.log('starting!', 'success', ['toast'])
 
@@ -24,5 +28,3 @@ device.log('ending!', 'success', ['toast'])
 
 if __name__ == '__main__':
     farmware_name = 'move_to_safe'
-    # Load inputs from Farmware page widget specified in manifest file
-    z_height = get_env('safe_z')
