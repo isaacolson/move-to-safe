@@ -14,9 +14,9 @@ pos_z = z_height
 device.log('Moving to ' + str(pos_x) + ', ' + str(pos_y) + ', ' + str(pos_z), 'success', ['toast'])
 
 device.move_absolute(
-    {'x': pos_x, 
-     'y': pos_y, 
-     'z': pos_z
+    {x: pos_x, 
+     y: pos_y, 
+     z: pos_z
     }, 100,
     {'x': 0, 
      'y': 0, 
@@ -24,7 +24,6 @@ device.move_absolute(
     })
 
 device.log('ending!', 'success', ['toast'])
-
 
 if __name__ == '__main__':
     farmware_name = 'move_to_safe'
