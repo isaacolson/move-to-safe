@@ -14,14 +14,18 @@ pos_z = z_height
 device.log('Moving to ' + str(pos_x) + ', ' + str(pos_y) + ', ' + str(pos_z), 'success', ['toast'])
 
 device.move_absolute(
-    {int(pos_x), 
-     int(pos_y), 
-     int(pos_z)
-    }, 100,
-    {0, 
-     0, 
-     0
-    })
+    {kind: "coordinate";
+    args: {
+        x: x_pos;
+        y: y_pos;
+        z: z_pos;
+    }}, 100,
+    {kind: "coordinate";
+    args: {
+        x: 0;
+        y: 0;
+        z: 0;
+    }})
 
 device.log('ending!', 'success', ['toast'])
 
