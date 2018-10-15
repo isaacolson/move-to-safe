@@ -17,14 +17,15 @@ device.move_absolute(
     {
         'kind': 'coordinate',
         'args': {'x': pos_x, 'y': pos_y, 'z': pos_z}
-    }, 100,    
+    }, 
+    100,    
     {
         'kind': 'coordinate',
         'args': {'x': 0, 'y': 0, 'z': 0}
     }
 )
 
-device.log('ending!', 'success', ['toast'])
+device.log('success!!', 'success', ['toast'])
 
 if __name__ == '__main__':
     farmware_name = 'move_to_safe'
